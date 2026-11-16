@@ -76,3 +76,37 @@ body {
 .footer .link a:hover {
   color: #0d6efd;
 }
+
+
+/* Our Menu */
+
+#menu {
+  background-color: #FFFDF0;
+  border: 2px solid #F3E8C7;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#menu h3 {
+  color: #8C5635;
+}
+
+#menu .lead {
+  color: #7A6B5D;
+}
+
+#menu .card {
+  background-color: #FFFFFF;
+  border: 2px solid #FCE4EC !important;
+  transition: transform 0.3s ease;
+}
+
+#menu .card:hover {
+  transform: translateY(-5px);
+  border-color: #F8BBD0 !important;
+}
+
+#menu h5 {
+  color: #6D4C41;
+}
