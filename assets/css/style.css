@@ -76,3 +76,143 @@ body {
 .footer .link a:hover {
   color: #0d6efd;
 }
+
+
+
+
+
+/* =====================================
+   ABOUT US - FEMI
+===================================== */
+
+#about {
+    background-color: #FFFDF0;
+    border: 2px solid #F3E8C7;
+    border-radius: 22px;
+    padding: 30px 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/* Judul About Us */
+#about .about-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #775537;
+    font-size: 3.2rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+/* Deskripsi pembuka */
+#about .lead {
+    font-family: 'Raleway', sans-serif;
+    color: #8A765F;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.9;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* Judul bagian deskripsi */
+#about .about-heading {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #775537;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 1.4;
+}
+
+#about .about-heading span {
+    color: #A07A52;
+    font-style: italic;
+}
+
+/* Paragraf */
+#about p {
+    font-family: 'Raleway', sans-serif;
+    color: #8A765F;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.9;
+}
+
+/* Daftar keunggulan */
+#about .about-list {
+    padding-left: 22px;
+    color: #775537;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 2;
+}
+
+#about .about-list li {
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+
+#about .about-list li::marker {
+    color: #E8B923;
+}
+
+
+/* Kotak background di belakang poster */
+#about .about-image-box {
+    display: table;
+    width: fit-content;
+    max-width: 100%;
+    padding: 8px;
+    margin: 0 auto;
+    background-color: #FFF4C9;
+    border: 2px solid #F3E8C7;
+    border-radius: 22px;
+}
+
+/* Foto poster */
+#about .about-image {
+    display: block;
+    width: auto;
+    max-width: 380px;
+    max-height: 300px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 16px;
+}
+
+/* Hover foto */
+#about .about-image:hover {
+    transform: translateY(-5px);
+    border-color: #F6DC8E;
+}
+/* Responsive HP */
+@media (max-width: 768px) {
+
+    #about {
+        padding: 30px 18px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    #about .about-title {
+        font-size: 2.3rem;
+    }
+
+    #about .about-heading {
+        font-size: 23px;
+    }
+
+    #about .lead {
+        font-size: 14px;
+    }
+
+    #about p,
+    #about .about-list {
+        font-size: 13px;
+    }
+
+    #about .about-image {
+        max-height: 280px;
+    }
+}
+
