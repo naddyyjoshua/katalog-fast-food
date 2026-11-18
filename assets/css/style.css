@@ -76,3 +76,128 @@ body {
 .footer .link a:hover {
   color: #0d6efd;
 }
+
+
+
+/* ==================================
+   CONTACT US - FULL SCREEN DESIGN
+================================== */
+
+/* Background cokelat memenuhi layar */
+#contact {
+    background-color: #8C5635;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 !important;
+    padding: 50px 4% !important;
+    border-radius: 0;
+}
+
+/* Kotak kuning memenuhi area */
+#contact .contact-shell {
+    background-color: #fffdf0;
+    border: 2px solid #fffdf0;
+    border-radius: 25px;
+    width: 100%;
+    padding: 45px 40px;
+    margin: 0 auto;
+}
+
+/* Judul */
+#contact h3 {
+    color: #8C5635;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 32px;
+}
+
+/* Deskripsi */
+#contact .lead {
+    color: #7A6B5D;
+    line-height: 1.8;
+}
+
+/* Kartu informasi */
+#contact .contact-card {
+    background-color: #FFFFFF;
+    border: 1.5px solid #FCE4EC !important;
+    border-radius: 18px !important;
+    transition: all 0.3s ease;
+}
+
+/* Hover kartu */
+#contact .contact-card:hover {
+    border-color: #F8BBD0 !important;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(109, 76, 65, 0.15) !important;
+}
+
+/* Judul kartu */
+#contact .contact-card h5 {
+    color: #6D4C41;
+    font-weight: 700;
+}
+
+/* Isi kartu */
+#contact .contact-card p {
+    color: #7A6B5D;
+    line-height: 1.7;
+}
+
+/* Ikon */
+#contact .contact-card i {
+    color: #8C5635;
+}
+
+/* Link */
+#contact .contact-card a {
+    color: #8C5635;
+    text-decoration: none;
+}
+
+#contact .contact-card a:hover {
+    color: #C47A52;
+    text-decoration: underline;
+}
+
+/* Garis pemisah */
+#contact .contact-card hr {
+    border-color: #FCE4EC;
+    opacity: 1;
+}
+
+/* Google Maps */
+#contact .contact-map {
+    overflow: hidden;
+    border: 2px solid #FCE4EC;
+    border-radius: 18px;
+    min-height: 450px;
+}
+
+#contact .contact-map iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 450px;
+    display: block;
+    border: 0;
+}
+
+/* Tampilan HP */
+@media (max-width: 768px) {
+    #contact {
+        padding: 25px 12px !important;
+    }
+
+    #contact .contact-shell {
+        padding: 25px 15px;
+    }
+
+    #contact h3 {
+        font-size: 25px;
+    }
+
+    #contact .contact-map,
+    #contact .contact-map iframe {
+        min-height: 300px;
+    }
+}
