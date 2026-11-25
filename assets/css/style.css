@@ -27,38 +27,16 @@ body {
   color: #0d6efd !important;
 }
 
-/* --- INI BAGIAN BARU KHUSUS OUR SERVICES --- */
-#services {
-  background: linear-gradient(135deg, #FDF8F2 0%, #F4EADB 100%);
-  border-radius: 20px;
-}
-
-#services .card {
-  background-color: #FFFFFF;
-  border: 1px solid #EFE6DC !important;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#services .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 30px rgba(74, 51, 33, 0.15) !important;
-}
-
 .feature-icon-1 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 4.5rem;
-  height: 4.5rem;
-  font-size: 2rem;
-  color: #4A3321;
-  background-color: #F4DE9B;
+  width: 5rem;
+  height: 5rem;
+  font-size: 3rem;
+  color: #fff;
   border-radius: 100%;
-  box-shadow: 0 4px 10px rgba(244, 222, 155, 0.5);
-  margin-left: auto;
-  margin-right: auto;
 }
-/* ------------------------------------------ */
 
 .btn-social-media {
   color: #31316a;
