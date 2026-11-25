@@ -76,143 +76,189 @@ body {
 .footer .link a:hover {
   color: #0d6efd;
 }
-
-
-
-
-
-/* =====================================
-   ABOUT US - FEMI
-===================================== */
-
-#about {
-    background-color: #FFFDF0;
-    border: 2px solid #F3E8C7;
-    border-radius: 22px;
-    padding: 30px 25px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+/* ===== Fast Feast - Navbar & Hero (sabhna) ===== */
+.gb-nav {
+  background-color: #fffdf0;
+  border-bottom: 1px solid #f3e8c7;
 }
 
-/* Judul About Us */
-#about .about-title {
-    font-family: 'Playfair Display', Georgia, serif;
-    color: #775537;
-    font-size: 3.2rem;
-    font-weight: 800;
-    letter-spacing: 0.5px;
+.gb-brand {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #775537;
+  letter-spacing: 0.3px;
 }
 
-/* Deskripsi pembuka */
-#about .lead {
-    font-family: 'Raleway', sans-serif;
-    color: #8A765F;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.9;
-    max-width: 750px;
-    margin: 0 auto;
+.gb-brand span {
+  color: #a07a52;
+  font-style: italic;
 }
 
-/* Judul bagian deskripsi */
-#about .about-heading {
-    font-family: 'Playfair Display', Georgia, serif;
-    color: #775537;
-    font-size: 28px;
-    font-weight: 800;
-    line-height: 1.4;
+/* menu navbar + efek bubble coklat saat hover */
+.gb-nav .navbar-nav .nav-link {
+  color: #775537 !important;
+  font-weight: 600;
+  padding: 0.5rem 1.1rem !important;
+  border-radius: 50rem;
+  transition: all 0.3s ease;
 }
 
-#about .about-heading span {
-    color: #A07A52;
-    font-style: italic;
+.gb-nav .navbar-nav .nav-link:hover,
+.gb-nav .navbar-nav .nav-link:focus {
+  background-color: #775537;
+  color: #fffdf0 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(119, 85, 55, 0.25);
 }
 
-/* Paragraf */
-#about p {
-    font-family: 'Raleway', sans-serif;
-    color: #8A765F;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.9;
+.gb-nav .btn-social-media {
+  color: #fffdf0;
+  background-color: #775537;
+  border-color: #775537;
 }
 
-/* Daftar keunggulan */
-#about .about-list {
-    padding-left: 22px;
-    color: #775537;
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 2;
+.gb-nav .btn-social-media:hover {
+  color: #775537;
+  background-color: #f6dc8e;
+  border-color: #f6dc8e;
 }
 
-#about .about-list li {
-    margin-bottom: 5px;
-    padding-left: 5px;
+/* ikon burger menu di HP (biar kelihatan di navbar terang) */
+.gb-nav .navbar-toggler {
+  border-color: rgba(119, 85, 55, 0.4);
 }
 
-#about .about-list li::marker {
-    color: #E8B923;
+.gb-nav .navbar-toggler-icon {
+  filter: invert(1);
+  opacity: 0.7;
 }
 
-
-/* Kotak background di belakang poster */
-#about .about-image-box {
-    display: table;
-    width: fit-content;
-    max-width: 100%;
-    padding: 8px;
-    margin: 0 auto;
-    background-color: #FFF4C9;
-    border: 2px solid #F3E8C7;
-    border-radius: 22px;
+.gb-hero {
+  position: relative;
+  overflow: hidden;
+  color: #fffdf0;
+  background:
+    radial-gradient(rgba(255, 253, 240, 0.07) 1.5px, transparent 1.5px),
+    radial-gradient(circle at 88% 18%, rgba(246, 220, 142, 0.28) 0, transparent 45%),
+    radial-gradient(circle at 6% 92%, rgba(255, 253, 240, 0.10) 0, transparent 40%),
+    linear-gradient(135deg, #775537 0%, #8a6644 50%, #a07a52 100%);
+  background-size: 22px 22px, auto, auto, auto;
+  padding-bottom: 1.5rem;
 }
 
-/* Foto poster */
-#about .about-image {
-    display: block;
-    width: auto;
-    max-width: 380px;
-    max-height: 300px;
-    height: auto;
-    object-fit: contain;
-    border-radius: 16px;
+.gb-badge {
+  display: inline-block;
+  background: #f6dc8e;
+  color: #5e4129;
+  padding: 0.35rem 1rem;
+  border-radius: 50rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
-/* Hover foto */
-#about .about-image:hover {
-    transform: translateY(-5px);
-    border-color: #F6DC8E;
-}
-/* Responsive HP */
-@media (max-width: 768px) {
-
-    #about {
-        padding: 30px 18px;
-        margin-top: 25px;
-        margin-bottom: 25px;
-    }
-
-    #about .about-title {
-        font-size: 2.3rem;
-    }
-
-    #about .about-heading {
-        font-size: 23px;
-    }
-
-    #about .lead {
-        font-size: 14px;
-    }
-
-    #about p,
-    #about .about-list {
-        font-size: 13px;
-    }
-
-    #about .about-image {
-        max-height: 280px;
-    }
+.gb-badge i {
+  color: #775537;
 }
 
+.gb-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 800;
+  font-size: 3.2rem;
+  line-height: 1.2;
+  color: #fffdf0;
+}
+
+.gb-title span {
+  font-style: italic;
+  color: #f6dc8e;
+  padding: 0 0.15em;
+  background: linear-gradient(transparent 70%, rgba(246, 220, 142, 0.25) 70%);
+}
+
+.gb-text {
+  color: #f3e8c7;
+}
+
+.gb-points li {
+  color: #fffdf0;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.gb-points i {
+  color: #f6dc8e;
+  margin-right: 0.5rem;
+}
+
+.btn-gb-primary {
+  background-color: #f6dc8e;
+  color: #5e4129;
+  font-weight: 700;
+  border: 2px solid #f6dc8e;
+}
+
+.btn-gb-primary:hover {
+  background-color: #fff4c9;
+  border-color: #fff4c9;
+  color: #5e4129;
+}
+
+.btn-gb-outline {
+  background-color: transparent;
+  color: #fffdf0;
+  font-weight: 700;
+  border: 2px solid #f3e8c7;
+}
+
+.btn-gb-outline:hover {
+  background-color: #fffdf0;
+  border-color: #fffdf0;
+  color: #775537;
+}
+
+.gb-img-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.gb-img-wrap::before {
+  content: "";
+  position: absolute;
+  inset: 6%;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fff8dc 0%, #f9e3a0 60%, #f1cf6e 100%);
+  box-shadow: 0 0 0 10px rgba(255, 253, 240, 0.12), 0 0 60px rgba(246, 220, 142, 0.45);
+  z-index: 0;
+}
+
+.gb-img {
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(0 16px 20px rgba(60, 40, 25, 0.4));
+}
+
+.gb-chip {
+  position: absolute;
+  z-index: 2;
+  left: -2%;
+  bottom: 10%;
+  background: #fffdf0;
+  color: #775537;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  border-radius: 50rem;
+  box-shadow: 0 8px 18px rgba(60, 40, 25, 0.3);
+}
+
+.gb-chip i {
+  color: #e8b923;
+}
+
+@media (max-width: 575.98px) {
+  .gb-title {
+    font-size: 2.3rem;
+  }
+}
