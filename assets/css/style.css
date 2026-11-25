@@ -1,12 +1,35 @@
+
+:root {
+  --fs-brown: #775537;        /* coklat utama (navbar, hero, judul) */
+  --fs-brown-dark: #5e4129;   /* coklat tua */
+  --fs-brown-light: #a07a52;  /* coklat muda / aksen */
+  --fs-gold: #f6dc8e;         /* kuning utama */
+  --fs-gold-soft: #fff4c9;    /* kuning pucat */
+  --fs-cream: #fffdf0;        /* krem background section */
+  --fs-sand: #f3e8c7;         /* krem tua untuk border */
+  --fs-text: #7a6b5d;         /* warna teks paragraf */
+}
+
 body {
   font-family: Raleway, sans-serif;
-  background: #f6f8fd;
+  background: #fbf7ec;
 }
 
-.bg-nav {
-  background-color: #f6f8fd;
+/* Judul & deskripsi section (dipakai di Services, About, Menu, Contact) */
+.section-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2.8rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: var(--fs-brown);
 }
 
+.section-lead {
+  color: var(--fs-text);
+  line-height: 1.8;
+}
+
+/* Helper bawaan template */
 .mt--2 {
   margin-top: -0.5rem !important;
 }
@@ -16,28 +39,7 @@ body {
   opacity: .25;
 }
 
-.navbar-light .navbar-nav .nav-link {
-  color: #212529 !important;
-  font-size: 16px;
-  font-weight: 600;
-  transition: all 0.4s;
-}
-
-.navbar-light .navbar-nav .nav-link:hover {
-  color: #0d6efd !important;
-}
-
-.feature-icon-1 {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 5rem;
-  height: 5rem;
-  font-size: 3rem;
-  color: #fff;
-  border-radius: 100%;
-}
-
+/* Tombol sosmed (bawaan template, warnanya di-override di .gb-nav) */
 .btn-social-media {
   color: #31316a;
   background-color: #cdcfdf;
@@ -58,46 +60,31 @@ body {
   border-color: #0d6efd;
 }
 
-/* Footer */
-.footer .copyright a {
-  color: #ee5050;
-  text-decoration: none;
-}
 
-.footer .copyright a:hover {
-  color: #eb2d2d;
-}
-
-.footer .link a {
-  color: #212529;
-  text-decoration: none;
-}
-
-.footer .link a:hover {
-  color: #0d6efd;
-}
-/* ===== Fast Feast - Navbar & Hero (sabhna) ===== */
+/* ==========================================================================
+   2. NAVBAR (sabhna)
+   ========================================================================== */
 .gb-nav {
-  background-color: #fffdf0;
-  border-bottom: 1px solid #f3e8c7;
+  background-color: var(--fs-cream);
+  border-bottom: 1px solid var(--fs-sand);
 }
 
 .gb-brand {
   font-family: 'Playfair Display', Georgia, serif;
   font-size: 1.6rem;
   font-weight: 800;
-  color: #775537;
+  color: var(--fs-brown);
   letter-spacing: 0.3px;
 }
 
 .gb-brand span {
-  color: #a07a52;
+  color: var(--fs-brown-light);
   font-style: italic;
 }
 
 /* menu navbar + efek bubble coklat saat hover */
 .gb-nav .navbar-nav .nav-link {
-  color: #775537 !important;
+  color: var(--fs-brown) !important;
   font-weight: 600;
   padding: 0.5rem 1.1rem !important;
   border-radius: 50rem;
@@ -106,22 +93,22 @@ body {
 
 .gb-nav .navbar-nav .nav-link:hover,
 .gb-nav .navbar-nav .nav-link:focus {
-  background-color: #775537;
-  color: #fffdf0 !important;
+  background-color: var(--fs-brown);
+  color: var(--fs-cream) !important;
   transform: translateY(-2px);
   box-shadow: 0 6px 14px rgba(119, 85, 55, 0.25);
 }
 
 .gb-nav .btn-social-media {
-  color: #fffdf0;
-  background-color: #775537;
-  border-color: #775537;
+  color: var(--fs-cream);
+  background-color: var(--fs-brown);
+  border-color: var(--fs-brown);
 }
 
 .gb-nav .btn-social-media:hover {
-  color: #775537;
-  background-color: #f6dc8e;
-  border-color: #f6dc8e;
+  color: var(--fs-brown);
+  background-color: var(--fs-gold);
+  border-color: var(--fs-gold);
 }
 
 /* ikon burger menu di HP (biar kelihatan di navbar terang) */
@@ -134,10 +121,14 @@ body {
   opacity: 0.7;
 }
 
+
+/* ==========================================================================
+   3. HERO (sabhna)
+   ========================================================================== */
 .gb-hero {
   position: relative;
   overflow: hidden;
-  color: #fffdf0;
+  color: var(--fs-cream);
   background:
     radial-gradient(rgba(255, 253, 240, 0.07) 1.5px, transparent 1.5px),
     radial-gradient(circle at 88% 18%, rgba(246, 220, 142, 0.28) 0, transparent 45%),
@@ -149,8 +140,8 @@ body {
 
 .gb-badge {
   display: inline-block;
-  background: #f6dc8e;
-  color: #5e4129;
+  background: var(--fs-gold);
+  color: var(--fs-brown-dark);
   padding: 0.35rem 1rem;
   border-radius: 50rem;
   font-size: 0.9rem;
@@ -159,7 +150,7 @@ body {
 }
 
 .gb-badge i {
-  color: #775537;
+  color: var(--fs-brown);
 }
 
 .gb-title {
@@ -167,55 +158,55 @@ body {
   font-weight: 800;
   font-size: 3.2rem;
   line-height: 1.2;
-  color: #fffdf0;
+  color: var(--fs-cream);
 }
 
 .gb-title span {
   font-style: italic;
-  color: #f6dc8e;
+  color: var(--fs-gold);
   padding: 0 0.15em;
   background: linear-gradient(transparent 70%, rgba(246, 220, 142, 0.25) 70%);
 }
 
 .gb-text {
-  color: #f3e8c7;
+  color: var(--fs-sand);
 }
 
 .gb-points li {
-  color: #fffdf0;
+  color: var(--fs-cream);
   font-weight: 600;
   margin-bottom: 0.4rem;
 }
 
 .gb-points i {
-  color: #f6dc8e;
+  color: var(--fs-gold);
   margin-right: 0.5rem;
 }
 
 .btn-gb-primary {
-  background-color: #f6dc8e;
-  color: #5e4129;
+  background-color: var(--fs-gold);
+  color: var(--fs-brown-dark);
   font-weight: 700;
-  border: 2px solid #f6dc8e;
+  border: 2px solid var(--fs-gold);
 }
 
 .btn-gb-primary:hover {
-  background-color: #fff4c9;
-  border-color: #fff4c9;
-  color: #5e4129;
+  background-color: var(--fs-gold-soft);
+  border-color: var(--fs-gold-soft);
+  color: var(--fs-brown-dark);
 }
 
 .btn-gb-outline {
   background-color: transparent;
-  color: #fffdf0;
+  color: var(--fs-cream);
   font-weight: 700;
-  border: 2px solid #f3e8c7;
+  border: 2px solid var(--fs-sand);
 }
 
 .btn-gb-outline:hover {
-  background-color: #fffdf0;
-  border-color: #fffdf0;
-  color: #775537;
+  background-color: var(--fs-cream);
+  border-color: var(--fs-cream);
+  color: var(--fs-brown);
 }
 
 .gb-img-wrap {
@@ -244,8 +235,8 @@ body {
   z-index: 2;
   left: -2%;
   bottom: 10%;
-  background: #fffdf0;
-  color: #775537;
+  background: var(--fs-cream);
+  color: var(--fs-brown);
   font-weight: 700;
   font-size: 0.9rem;
   padding: 0.5rem 1rem;
@@ -255,6 +246,321 @@ body {
 
 .gb-chip i {
   color: #e8b923;
+}
+
+
+/* ==========================================================================
+   4. OUR SERVICES (farrikhah)
+   ========================================================================== */
+#services {
+  background: linear-gradient(135deg, #fdf8f2 0%, #f4eadb 100%);
+  border-radius: 20px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#services .card {
+  background-color: #fdfbf7;
+  border: 1px solid #efe6dc !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#services .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(74, 51, 33, 0.15) !important;
+}
+
+#services .service-title {
+  color: #4a3321;
+}
+
+/* lingkaran ikon kuning */
+.feature-icon-1 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  font-size: 1.5rem;
+  color: #3e2a1a;
+  background-color: #f4de9b;
+  border-radius: 100%;
+  box-shadow: 0 4px 10px rgba(244, 222, 155, 0.5);
+}
+
+
+/* ==========================================================================
+   5. ABOUT US (femi)
+   ========================================================================== */
+#about {
+  background-color: var(--fs-cream);
+  border: 2px solid var(--fs-sand);
+  border-radius: 22px;
+  padding: 30px 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/* Deskripsi pembuka */
+#about .lead {
+  font-family: 'Raleway', sans-serif;
+  color: #8a765f;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.9;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+/* Judul bagian deskripsi */
+#about .about-heading {
+  font-family: 'Playfair Display', Georgia, serif;
+  color: var(--fs-brown);
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+#about .about-heading span {
+  color: var(--fs-brown-light);
+  font-style: italic;
+}
+
+/* Paragraf */
+#about p {
+  font-family: 'Raleway', sans-serif;
+  color: #8a765f;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.9;
+}
+
+/* Daftar keunggulan */
+#about .about-list {
+  padding-left: 22px;
+  color: var(--fs-brown);
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 2;
+}
+
+#about .about-list li {
+  margin-bottom: 5px;
+  padding-left: 5px;
+}
+
+#about .about-list li::marker {
+  color: #e8b923;
+}
+
+/* Kotak background di belakang poster (opsional, bungkus <img> dengan div ini kalau mau dipakai) */
+#about .about-image-box {
+  display: table;
+  width: fit-content;
+  max-width: 100%;
+  padding: 8px;
+  margin: 0 auto;
+  background-color: var(--fs-gold-soft);
+  border: 2px solid var(--fs-sand);
+  border-radius: 22px;
+}
+
+/* Foto poster */
+#about .about-image {
+  display: block;
+  width: auto;
+  max-width: 380px;
+  max-height: 300px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+}
+
+#about .about-image:hover {
+  transform: translateY(-5px);
+}
+
+
+/* ==========================================================================
+   6. OUR MENU (alvianita rahma)
+   ========================================================================== */
+#menu {
+  background-color: var(--fs-cream);
+  border: 2px solid var(--fs-sand);
+  border-radius: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#menu .card {
+  background-color: #fff;
+  border: 2px solid var(--fs-sand) !important;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#menu .card:hover {
+  transform: translateY(-5px);
+  border-color: var(--fs-gold) !important;
+  box-shadow: 0 8px 20px rgba(119, 85, 55, 0.15) !important;
+}
+
+#menu h5 {
+  color: #6d4c41;
+}
+
+
+/* ==========================================================================
+   7. CONTACT US (gendis)
+   ========================================================================== */
+
+/* Background coklat memenuhi lebar layar */
+#contact {
+  background-color: var(--fs-brown);
+  width: 100%;
+  max-width: 100%;
+  margin: 0 !important;
+  padding: 50px 4% !important;
+  border-radius: 0;
+}
+
+/* Kotak krem di dalamnya */
+#contact .contact-shell {
+  background-color: var(--fs-cream);
+  border: 2px solid var(--fs-cream);
+  border-radius: 25px;
+  width: 100%;
+  padding: 45px 40px;
+  margin: 0 auto;
+}
+
+/* Kartu informasi */
+#contact .contact-card {
+  background-color: #fff;
+  border: 1.5px solid var(--fs-sand) !important;
+  border-radius: 18px !important;
+  transition: all 0.3s ease;
+}
+
+#contact .contact-card:hover {
+  border-color: var(--fs-gold) !important;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(109, 76, 65, 0.15) !important;
+}
+
+#contact .contact-card h5 {
+  color: #6d4c41;
+  font-weight: 700;
+}
+
+#contact .contact-card p {
+  color: var(--fs-text);
+  line-height: 1.7;
+}
+
+#contact .contact-card i {
+  color: var(--fs-brown);
+}
+
+#contact .contact-card a {
+  color: var(--fs-brown);
+  text-decoration: none;
+}
+
+#contact .contact-card a:hover {
+  color: #c47a52;
+  text-decoration: underline;
+}
+
+#contact .contact-card hr {
+  border-color: var(--fs-sand);
+  opacity: 1;
+}
+
+/* Google Maps */
+#contact .contact-map {
+  overflow: hidden;
+  border: 2px solid var(--fs-sand);
+  border-radius: 18px;
+  min-height: 450px;
+}
+
+#contact .contact-map iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 450px;
+  display: block;
+  border: 0;
+}
+
+
+/* ==========================================================================
+   8. FOOTER
+   ========================================================================== */
+.footer .copyright a {
+  color: var(--fs-brown);
+  text-decoration: none;
+}
+
+.footer .copyright a:hover {
+  color: var(--fs-brown-dark);
+}
+
+.footer .link a {
+  color: #212529;
+  text-decoration: none;
+}
+
+.footer .link a:hover {
+  color: var(--fs-brown);
+}
+
+
+/* ==========================================================================
+   9. RESPONSIVE (HP)
+   ========================================================================== */
+@media (max-width: 768px) {
+
+  .section-title {
+    font-size: 2.1rem;
+  }
+
+  /* About */
+  #about {
+    padding: 30px 18px;
+  }
+
+  #about .about-heading {
+    font-size: 23px;
+  }
+
+  #about .lead {
+    font-size: 14px;
+  }
+
+  #about p,
+  #about .about-list {
+    font-size: 13px;
+  }
+
+  #about .about-image {
+    max-height: 280px;
+  }
+
+  /* Contact */
+  #contact {
+    padding: 25px 12px !important;
+  }
+
+  #contact .contact-shell {
+    padding: 25px 15px;
+  }
+
+  #contact .contact-map,
+  #contact .contact-map iframe {
+    min-height: 300px;
+  }
 }
 
 @media (max-width: 575.98px) {
